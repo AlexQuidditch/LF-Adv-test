@@ -1,0 +1,634 @@
+/*	FiraSans: ;*/
+
+@font-face {
+	font-family: "FiraSans-Italic";
+	src: url("../assets/fonts/FiraSans/FiraSans-Italic.ttf") format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FiraSans-Bold";
+	src: url("../assets/fonts/FiraSans/FiraSans-Bold.ttf") format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FiraSans-BoldItalic";
+	src: url("../assets/fonts/FiraSans/FiraSans-BoldItalic.ttf") format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FiraSans-Light";
+	src: url("../assets/fonts/FiraSans/FiraSans-Light.ttf") format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FiraSans-LightItalic";
+	src: url("../assets/fonts/FiraSans/FiraSans-LightItalic.ttf") format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FiraSans-Medium";
+	src: url("../assets/fonts/FiraSans/FiraSans-Medium.ttf") format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FiraSans-MediumItalic";
+	src: url("../assets/fonts/FiraSans/FiraSans-MediumItalic.ttf") format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FiraSans-Regular";
+	src: url("../assets/fonts/FiraSans/FiraSans-Regular.ttf") format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-image: url('../assets/img/gplaypattern.png');
+	background-repeat: repeat;
+}
+
+.checkbox-JS,
+.checkbox-jQuery,
+.checkbox-Base,
+.checkbox-Adaptive,
+.checkbox-Btn-generator,
+.checkbox-CSS-gallery {
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 16px;
+	height: 16px;
+}
+
+.checkbox-JS + label,
+.checkbox-jQuery + label,
+.checkbox-Base + label,
+.checkbox-Adaptive + label,
+.checkbox-Btn-generator + label,
+.checkbox-CSS-gallery + label {
+	cursor: pointer;
+}
+
+.checkbox-JS:not(checked),
+.checkbox-jQuery:not(checked),
+.checkbox-Base:not(checked),
+.checkbox-Adaptive:not(checked),
+.checkbox-Btn-generator:not(checked),
+.checkbox-CSS-gallery:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+.checkbox-JS:not(checked) + label,
+.checkbox-jQuery:not(checked) + label,
+.checkbox-Base:not(checked) + label,
+.checkbox-Adaptive:not(checked) + label,
+.checkbox-Btn-generator:not(checked) + label,
+.checkbox-CSS-gallery:not(checked) + label {
+	position: relative;
+	padding: 2px 0 0 30px;
+	font-family: 'FiraSans-Regular';
+	font-weight: 400;
+	font-size: 16px;
+	color: #444;
+	cursor: pointer;
+	-webkit-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.checkbox-JS:checked + label,
+.checkbox-jQuery:checked + label,
+.checkbox-Base:checked + label,
+.checkbox-Adaptive:checked + label,
+.checkbox-Btn-generator:checked + label,
+.checkbox-CSS-gallery:checked + label {
+	color: #8cc34b;
+}
+
+.checkbox-JS:not(checked) + label:before,
+.checkbox-jQuery:not(checked) + label:before,
+.checkbox-Base:not(checked) + label:before,
+.checkbox-Adaptive:not(checked) + label:before,
+.checkbox-Btn-generator:not(checked) + label:before,
+.checkbox-CSS-gallery:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	background-image: url('../assets/img/checkbox.png');
+}
+
+.checkbox-JS:not(checked) + label:after,
+.checkbox-jQuery:not(checked) + label:after,
+.checkbox-Base:not(checked) + label:after,
+.checkbox-Adaptive:not(checked) + label:after,
+.checkbox-Btn-generator:not(checked) + label:after,
+.checkbox-CSS-gallery:not(checked) + label:after {
+	position: absolute;
+	top: -2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox-JS:checked + label:before,
+.checkbox-jQuery:checked + label:before,
+.checkbox-Base:checked + label:before,
+.checkbox-Adaptive:checked + label:before,
+.checkbox-Btn-generator:checked + label:before,
+.checkbox-CSS-gallery:checked + label:before {
+	background-image: url('../assets/img/checkbox_checked.png');
+}
+
+
+/*
+Checkbox Settings END
+*/
+
+.s-header {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 90px;
+	background-color: #8cc34b;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.b-student {
+	display: inline-block;
+	width: auto;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	margin-left: 28px;
+}
+
+.b-student__avatar {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+}
+
+.b-avatar__img {
+	width: 60px;
+	height: 60px;
+	border: solid 2px white;
+	border-radius: 50%;
+}
+
+.b-logo__text {
+	display: table-cell;
+	vertical-align: baseline;
+	padding-top: 2px;
+	padding-left: 14px;
+}
+
+.b-logo-text__name {
+	display: block;
+	font-family: 'FiraSans-Medium';
+	font-size: 21px;
+	line-height: 32px;
+	font-style: normal;
+	font-weight: 500;
+	color: white;
+	cursor: default;
+}
+
+.b-logo-text__email {
+	display: block;
+	font-family: 'FiraSans-Regular';
+	font-size: 14px;
+	line-height: 2;
+	color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+}
+
+.b-logo-text__email:hover {
+	color: white;
+}
+
+.b-socials {
+	display: table;
+	width: 150px;
+	height: auto;
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 30px
+}
+
+.b-socials__github,
+.b-socials__skype,
+.b-socials__vk {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.b-github__svg,
+.b-skype__svg {
+	opacity: 0.8;
+	width: 30px;
+	height: 31px;
+	margin-left: 7px;
+	margin-right: 7px;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+}
+
+.b-vk__svg {
+	opacity: 0.8;
+	width: 39px;
+	height: 22px;
+	margin-left: 7px;
+	margin-right: 0;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+}
+
+.b-github__svg:hover,
+.b-skype__svg:hover,
+.b-vk__svg:hover {
+	opacity: 1
+}
+
+
+/*			header end: 		*/
+
+
+/*			About Studet Section: 		*/
+
+.s-about-student {
+	height: auto;
+	background: white;
+}
+
+.b-about-student__wrapper {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 960px;
+	margin: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.b-about-student__main-container {
+	text-align: center;
+}
+
+.b-about-student-content__h2 {
+	font-family: 'FiraSans-Medium';
+	font-size: 48px;
+	line-height: 1.5;
+	color: #212121;
+}
+
+.b-about-student-content__h3 {
+	font-family: 'FiraSans-Light';
+	font-size: 24px;
+	line-height: 1.5;
+	color: #727272;
+}
+
+.b-about-student__information-container {
+	height: auto;
+	padding-top: 40px;
+}
+
+.b-information__biography {
+	display: inline-block;
+	width: 460px;
+}
+
+.b-biography__svg {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	height: 137px;
+}
+
+.b-biography__content {
+	display: inline-block;
+	width: 300px;
+	padding-left: 16px;
+}
+
+.b-biography__content-h4 {
+	font-family: 'FiraSans-Regular';
+	font-size: 24px;
+	color: #212121;
+	line-height: 2;
+}
+
+.b-biography__content-p {
+	font-family: 'FiraSans-Regular';
+	font-size: 16px;
+	line-height: 1.5;
+	color: #727272;
+}
+
+.b-information__experience {
+	display: inline-block;
+	vertical-align: top;
+	width: 460px;
+	margin-left: 10px;
+}
+
+.b-experience__svg {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.b-experience__content {
+	display: inline-block;
+	width: 300px;
+	padding-left: 16px;
+}
+
+.b-experience__content-h4 {
+	font-family: 'FiraSans-Regular';
+	font-size: 24px;
+	line-height: 2;
+	color: #212121
+}
+
+.b-experience__content-p {
+	font-family: 'FiraSans-Regular';
+	font-size: 16px;
+	line-height: 1.5;
+	color: #727272
+}
+
+
+/*
+Courses Section
+*/
+
+.b-courses__wrapper {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 960px;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 150px;
+}
+
+.b-courses__headlines-container {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+.b-courses-headline__h2 {
+	font-family: 'FiraSans-Medium';
+	font-size: 48px;
+	line-height: 1.5;
+	color: #212121;
+}
+
+.b-courses-headline__h3 {
+	font-family: 'FiraSans-Light';
+	font-size: 24px;
+	line-height: 1.5;
+	color: #727272;
+}
+
+
+/*
+Courses Wrapper
+*/
+
+.b-wrapper__item-JS,
+.b-wrapper__item-jQuery,
+.b-wrapper__item-Base,
+.b-wrapper__item-Adaptive,
+.b-wrapper__item-Btn-generator,
+.b-wrapper__item-CSS-gallery {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin-bottom: 23px;
+	background-color: white;
+	border-radius: 2px;
+	webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+	opacity: 0.8;
+	background-color: #8cc34b!important;
+}
+
+.b-wrapper__item-jQuery,
+.b-wrapper__item-Btn-generator {
+	margin: 0 20px
+}
+
+.b-item-JS__img,
+.b-item-jQuery__img,
+.b-item-Base__img,
+.b-item-Adaptive__img,
+.b-item-Btn-generator__img,
+.b-item-CSS-gallery__img {
+	display: block;
+	width: 300px;
+	height: 170px;
+}
+
+.b-item-JS__img {
+	background-image: url('../assets/img/JS.png')
+}
+
+.b-item-jQuery__img {
+	background-image: url('../assets/img/jQuery.png')
+}
+
+.b-item-Base__img {
+	background-image: url('../assets/img/Base.png')
+}
+
+.b-item-Adaptive__img {
+	background-image: url('../assets/img/Adaptive.png')
+}
+
+.b-item-Btn-generator__img {
+	background-image: url('../assets/img/Btn-generator.png')
+}
+
+.b-item-CSS-gallery__img {
+	background-image: url('../assets/img/CSS-gallery.png')
+}
+
+.b-item-JS__img::after,
+.b-item-jQuery__img::after,
+.b-item-Base__img::after,
+.b-item-Adaptive__img::after,
+.b-item-Btn-generator__img::after,
+.b-item-CSS-gallery__img::after {
+	display: block;
+	position: relative;
+	content: '';
+	opacity: 0;
+	top: 165px;
+	width: 100%;
+	height: 5px;
+	background-color: #8cc34b;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.b-wrapper__item-JS:hover .b-item-JS__img::after,
+.b-wrapper__item-jQuery:hover .b-item-jQuery__img::after,
+.b-wrapper__item-Base:hover .b-item-Base__img::after,
+.b-wrapper__item-Adaptive:hover .b-item-Adaptive__img::after,
+.b-wrapper__item-Btn-generator:hover .b-item-Btn-generator__img::after,
+.b-wrapper__item-CSS-gallery:hover .b-item-CSS-gallery__img::after {
+	opacity: 1;
+}
+
+.b-item-JS__headline,
+.b-item-jQuery__headline,
+.b-item-Base__headline,
+.b-item-Adaptive__headline,
+.b-item-Btn-generator__headline,
+.b-item-CSS-gallery__headline {
+	font-family: 'FiraSans-Regular';
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #212121;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.b-wrapper__item-JS:hover .b-item-JS__headline,
+.b-wrapper__item-jQuery:hover .b-item-jQuery__headline,
+.b-wrapper__item-Base:hover .b-item-Base__headline,
+.b-wrapper__item-Adaptive:hover .b-item-Adaptive__headline,
+.b-wrapper__item-Btn-generator:hover .b-item-Btn-generator__headline,
+.b-wrapper__item-CSS-gallery:hover .b-item-CSS-gallery__headline {
+	color: #8cc34b;
+}
+
+.b-item-JS__description,
+.b-item-jQuery__description,
+.b-item-Base__description,
+.b-item-Adaptive__description,
+.b-item-Btn-generator__description,
+.b-item-CSS-gallery__description {
+	font-family: 'FiraSans-Regular';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #727272;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.b-item-JS__course-duration,
+.b-item-jQuery__course-duration,
+.b-item-Base__course-duration,
+.b-item-Adaptive__course-duration,
+.b-item-Btn-generator__course-duration,
+.b-item-CSS-gallery__course-duration {
+	font-family: 'FiraSans-Regular';
+	display: block;
+	color: #c4ccba;
+	padding-top: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px
+}
+
+.b-item-JS__checkbox,
+.b-item-jQuery__checkbox,
+.b-item-Base__checkbox,
+.b-item-Adaptive__checkbox,
+.b-item-Btn-generator__checkbox,
+.b-item-CSS-gallery__checkbox {
+	z-index: 1000;
+	max-width: 300px;
+	max-height: 60px;
+	padding: 20px 0;
+	padding-left: 20px;
+	background-color: #f6f7f2;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.b-item-JS__checkbox_icon::before,
+.b-item-jQuery__checkbox_icon::before,
+.b-item-Base__checkbox_icon::before,
+.b-item-Adaptive__checkbox_icon::before,
+.b-item-Btn-generator__checkbox_icon::before,
+.b-item-CSS-gallery__checkbox_icon::before {
+	background-image: url('../assets/img/checkbox_checked.png');
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.s-footer {
+	display: table;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100vw;
+	height: 72px;
+	background-color: #212121;
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.b-footer__some-text {
+	display: table-cell;
+	vertical-align: middle;
+	font-family: FiraSans-Regular;
+	font-size: 14px;
+	line-height: 1.6;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+}
